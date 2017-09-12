@@ -1,0 +1,49 @@
+.login{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding:  60px 40px;
+    overflow: auto;
+}
+form{
+    display: inline-block;
+    text-align: right;
+    padding: 10px;
+}
+label{
+    display: block;
+    margin: 30px 0px;
+}
+label input{
+   float: left;
+   margin-right: 15px;
+   width: 180px;
+   text-align: center;
+}
+input[type="submit"]{
+    display: block;
+    margin: 25px auto;
+}
+.error{
+    color: red;
+    text-align: center;
+}
+.new-user{
+    margin-top: 30px;
+}
+.new-user a{
+    text-decoration: none;
+    color: #551b9f;
+    cursor: pointer;
+    transition: color 800ms;
+}
+.new-user a:hover{
+    color: #270058;
+    text-shadow: 0px 0px 5px white;
+}
+
+@media (max-width: 400px) {
+    label input{
+    width: 150px;
+    }
+}

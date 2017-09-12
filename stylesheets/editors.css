@@ -1,0 +1,52 @@
+#guiding{
+    font-size: 1.2em;
+}
+hr{
+    margin: 30px;
+    border-color: rgba(107,2,144,0.2);
+}
+#add-content{
+    display: block;
+    margin: 10px auto;
+}
+.error{
+    display: block;
+    text-align: center;
+    margin-top: 60px;
+    color: #3638b0;
+    font-size: 1.4em;
+}
+.item{
+    opacity: 0.7;
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgba(153, 153 ,255, 0.5);
+    cursor: pointer;
+    background-color: white;
+    transition: opacity 800ms, border 600ms;
+}
+.item:hover{
+    opacity: 1;
+    border: 1px solid rgba(153, 153 ,255, 0.7);
+}
+.item-id{
+    display: none !important;
+}
+.item p{
+    display: inline-block;
+    vertical-align: middle;
+}
+.item .label{
+    font-weight: bolder;
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+.item .intro{
+    max-width: 60%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 1.1em;
+    margin-right: 5px;
+}

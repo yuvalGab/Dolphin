@@ -1,0 +1,14 @@
+.contents{
+    width: 100%;
+}
+.contents h2{
+    margin-bottom: 20px;
+}
+.contents p{
+    margin-bottom: 10px;
+}
+.contents img{
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+}

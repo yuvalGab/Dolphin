@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button:focus {
+    outline: 0;
+}
+.wrapper{
+    direction: rtl;
+    max-width: 1920px;
+    margin: 0 auto;
+    font-family: 'Varela Round', sans-serif;
+}   
+header{
+    height: 40px;
+    background-color: #6931CA;
+    border-bottom: 1px solid #1a0047;
+}
+#logo{
+    display: inline-block;
+    vertical-align: middle;
+    width: 38px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.label{
+    display: inline-block;
+}
+.label h1{
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 2em;
+    margin-right: 10px;
+    color: white;
+    text-shadow: 0px 0px 10px #670d7e;
+    transition: text-shadow 1.2s;
+}
+.label h1:hover{
+    text-shadow: 0px 0px 10px black;
+}
+.menu{
+    float: left;
+    margin-left: 50px;
+}
+.option{
+    display: inline-block;
+    margin: 5px 30px;
+    font-size: 1.5em;
+}
+.option a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px 0px 3px #3467f2;
+    transition: text-shadow 1.2s;
+}
+.option a:hover, .selected-option{
+    text-shadow: 0px 0px 3px black !important;
+}
+.clear{
+    clear: both;
+}
+.main{
+    position: relative;
+    background-color: #f2ebf4;
+    height: calc(100vh - 71px);
+}
+footer{
+    min-height: 30px;
+    background-color: #d5cde3;
+    border-top: 1px solid #290765;
+    padding: 5px 20px;
+}
+.sidebar{
+    display: inline-block;
+    width: 15%;
+    border-left: 1px solid #1a0047;;
+    height: 100%;
+    overflow: auto;
+    padding: 2%;
+    background-color: #f0dafd;
+}
+.sidebar h2{
+    color: #490072;
+}
+.sidebar a{
+    display: block;
+    font-size: 1.2em;
+    margin: 20px 0px;
+    text-decoration: none;
+    color: #00054f;
+    margin-right: 10px;
+    text-shadow: 0px 0px 1px #d299d2;
+    transition:  text-shadow 500ms;
+}
+.sidebar a:hover{
+    text-shadow: 0px 0px 1px #950096;
+}
+.contents{
+    display: inline-block;
+    height: 100%;
+    width: 84%;
+    overflow: auto;
+    padding: 30px;
+}
+.button{
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgba(59,159,163, 0.5);
+    border: none;
+    color: #000842;
+    font-size: 1.2em;
+    transition: background-color 800ms, text-shadow 800ms;
+    border-radius: 3px;
+}
+.button:hover{
+    background-color: rgba(59,159,163, 0.8);
+    text-shadow: 0px 0px 2px white;
+}
+#menu-btn{
+    display: none;
+    float: left;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bolder;
+    margin: 4px;
+    border: 2px solid white;
+    background-color: #00779a;
+    padding: 3px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 800ms;
+}
+.mobile-menu{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #95c4d2;
+    text-align: center;
+    overflow: auto;
+    z-index: 3;
+}
+.mobile-menu .option{
+    display: block;
+    margin: 15% 0;
+    font-size: 2.5em;
+}
+#sidebar-btn{
+    display: none;
+    position: fixed;
+    top: 60px;
+    right: 15px;
+    z-index: 1;
+    cursor: pointer;
+    font-size: 1.2em;
+    border: 2px solid #0052c3;
+    padding: 7px 10px;
+    background-color: white;
+    border-radius: 30px 15px;
+    color: #002e6d;
+    font-weight: bolder;
+    opacity: 0.7;
+}
+.mobile-sidebar{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+    height: 100%;
+    overflow: auto;
+    background-color: #e2d6f9;
+    z-index: 2;
+    text-align: center;
+    padding: 5%;
+}
+.mobile-sidebar h2{
+    text-decoration: underline;
+    color: #38255e;
+}
+.mobile-sidebar a{
+    display: block;
+    margin: 20px 0;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #000d29;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+@media only screen and (max-width: 1000px){
+    .sidebar{
+        padding: 1%;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .menu{
+        display: none;
+    }
+    .sidebar{
+        display: none;
+    }
+    .contents{
+        width: 100%;
+    }
+    #menu-btn, #sidebar-btn{
+        display: block;
+    }
+    .contents{
+        padding-top: 65px;
+    }
+}
+
+
+

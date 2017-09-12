@@ -1,0 +1,90 @@
+.contents{
+    width: 100%;
+    padding: 5% 8%;
+    position: relative;
+}
+.contents h2{
+    display: inline-block;
+    text-decoration: underline;
+}
+#date{
+    float: left;
+}
+form{
+    margin: 40px 20px;
+    font-size: 1.2em;
+}
+label{
+    display: block;
+    margin: 20px 0px;
+}
+input, textarea, select{
+     font: 1em Arial;
+}
+#headline{
+    width: 40%;
+    margin-right: 20px;
+}
+#intro, #text{
+    width: 100%;
+    resize: none;
+}
+select{
+    margin-right: 20px;
+}
+#image{
+    margin-right: 20px;
+}
+#text-label{
+    display: block;
+    text-align: center;
+    margin: 50px 0px 20px 0px;
+}
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-color: rgba(0,0,0,0.1);
+}
+#add{
+    display: block;
+    margin: 0 auto;
+}
+.error{
+    color: red;
+}
+#image-error{
+    display: inline-block;
+}
+#old-category{
+    display: none;
+}
+.current-image{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+#delete-content{
+    float: left;
+    border: none;
+    color: white;
+    background-color: #f99797;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 76px 45px;    
+    transition: background-color 700ms;
+}
+#delete-content:hover{
+    background-color: #ab0404;
+}
+
+@media (max-width: 800px) {
+    #headline{
+        width: 100%;
+        margin-right: 0px;
+    }
+    .contents{
+        overflow-x: hidden;
+        padding: 5% 4%;
+    }
+
+}

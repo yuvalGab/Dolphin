@@ -1,0 +1,102 @@
+.contents{
+    background-color: white;
+}
+h2, h3, h4, h5{
+    margin-bottom: 20px;
+}
+h2{
+    text-align: center;
+    text-decoration: underline;
+}
+h5{
+    text-align: left;
+}
+.content p{
+    margin-top: 30px;
+}
+.contents img{
+    display: block;
+    max-width: 80%;
+    height: auto;
+    margin: 50px auto;
+}
+.error{
+    display: block;
+    text-align: center;
+    margin-top: 60px;
+    color: #3638b0;
+    font-size: 1.4em;
+}
+.posts{
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    border-right: 1px solid rgba(30,118,216, 0.4);
+    margin-bottom: 70px;
+}
+.new-post p{
+    text-decoration: underline;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+input, textarea{
+     font: 1em Arial;
+}
+.new-post input{
+    display: block;
+    width: 150px;
+    padding: 3px;
+    margin-bottom: 5px;
+}
+.new-post textarea{
+    width: 100%;
+    padding: 3px;
+    resize: none;
+}
+.new-post .button{
+    display: block;
+    margin: 10px auto;
+}
+#send-error{
+    text-align: center;
+    color: red;
+}
+.posts hr{
+    margin: 20px 5px;
+    border: 1px solid rgba(30,118,216, 0.2);
+}
+#show-error{
+    margin: 10px;
+    text-align: center;
+    font-size: 0.9em;
+    color: rgba(0,0,0,0.8);
+}
+.comment-box{
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgba(30,118,216, 0.3);
+    border-radius: 7px;
+}
+.comment-box .post-date{
+    text-align: left;
+    font-size: 0.8em;
+    color: rgba(0,0,0,0.8);
+}
+.comment-box .nickname{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.comment-box .main-comment{
+    font-size: 0.9em;
+    color: rgba(0,0,0,0.9);
+    padding: 5px;
+}
+
+@media only screen and (max-width: 1200px){
+    .posts{
+        width: 95%;
+        padding: 10px;
+    }
+}
